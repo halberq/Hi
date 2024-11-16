@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(224, 128, 210);
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 90px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the entire page content */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Optional: for font styling */
+}
+
+/* Center the container and text */
+.container {
+    text-align: center;
+}
+
+/* Ensure text inside header and paragraphs is centered */
+.content {
+    display: inline-block;
+    text-align: center;
+}
+
+.header_text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
