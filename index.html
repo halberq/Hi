@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE END OF PHYSICS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+    <style>
+        /* Optional: Add default styles for smooth color transition */
+        body {
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="image-container"></div> <!-- Container for displaying images -->
+        <div id="text-container">
+            <div id="question">THE END OF PHYSICS</div> <!-- Question -->
+            <div id="buttons">
+                <button id="hurray-button" onclick="startFlashing()">HURRAYY</button> <!-- Single Button -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startFlashing() {
+            let colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink"];
+            let count = 0;
+
+            // Flash colors every 500ms
+            let flashInterval = setInterval(() => {
+                document.body.style.backgroundColor = colors[count % colors.length];
+                count++;
+            }, 500);
+
+            // After 5 seconds, stop flashing and redirect
+            setTimeout(() => {
+                clearInterval(flashInterval);
+                nextPage();
+            }, 3500);
+        }
+
+        function nextPage() {
+            window.location.href = "hurray.html"; // Change to your desired next page
+        }
+    </script>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
