@@ -52,3 +52,23 @@ p {
     font-size: 18px;
     margin-bottom: 15px;
 }
+
+/* hurray.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Optional: Add a background color */
+}
+
+.container {
+    padding: 40px;
+    margin: 20px;
+    background-color: #ffffff; /* Optional: Set background for the content box */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    max-width: 600px; /* Optional: Set a max width for the content */
+    text-align: left; /* Ensures text aligns properly */
+}
